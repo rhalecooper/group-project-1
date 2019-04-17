@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Augmented Bucket List</title>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">Kick your Bucket List!</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./myaccount.html">My Account</a>
+            </div>
+          </li>
+        </ul>
+        <script>
+            (function() {
+              var cx = '001206202742235563484:z58b2c7qceg';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+        </form>
+      </div>
+    </nav>
+
+    <br />
+
+    <!-- Main Data Table -->
+    <div class="container" id="my-account-table">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>User Name:</h3>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputFirstName">First Name</label>
+                  <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLastName">Last Name</label>
+                  <input type="text" class="form-control" id="inputLastName" placeholder="Smith">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputUserName">User Name</label>
+                <input type="username" class="form-control" id="inputUserName" placeholder="Morpheus">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">eMail</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="johnsmith@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="911 Beer Street">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Funkytown">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control" id="inputState" placeholder="VA (2 digit abbreviation)">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="12345">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="create-account-button">Create Account</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <<<<<javascript Links>>>>> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlppE1f4yIN3TW5Rwo7x_c7qAOBSmuFy0"></script>
+  <script src="./assets/javascript/database.js"></script>
+  <script src="./assets/javascript/login.js"></script>
+  <script src="./assets/javascript/location.js"></script>
+  <script src="./assets/javascript/edititem.js"></script>
+  <script src="./assets/javascript/profile.js"></script>
+  <script src="./assets/javascript/main.js"></script>
+  </html>
